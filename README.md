@@ -7,18 +7,19 @@ This makes it very convenient for any of us eager to see the control commands at
 
 
 ## Setup
-If you encounter any issue during setup, or unclarity, reach out to [@mugoh](https://github.com/hogum)
+If you encounter any issue or unclarity during this setup, don't hesitate to reach out to [@mugoh](https://github.com/hogum)
 
 ### Package
-This part assumes you are unfamiliar with git and [pip](https://pypi.org/project/pip/). If that's not you go straight ahead to [Minimal Setup](https://github.com/hogum/Linear_Systems_Reduction/new/master?readme=1#minimal-setup).
+This part assumes you are unfamiliar with git and [pip](https://pypi.org/project/pip/). If that's not you, go straight ahead to [Minimal Setup](https://github.com/hogum/Linear_Systems_Reduction/new/master?readme=1#minimal-setup).
 1. Get a clone zipped-copy of this repo by clicking [here](https://github.com/hogum/Linear_Systems_Reduction/archive/master.zip)
 2. Extract the zip file and move the fileto Downloads. This is important. We will be using the downloads folder.
 
 ### Windows Platform
-1. You will need python3 installed. [Click here to install python3](https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe)
 
 #### Dependencies
-1. Install the package manager
+1. You will need python3 installed. [Click here to install python3](https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe)
+
+2. Install the package manager
 - Download get-pip from [here](https://bootstrap.pypa.io/get-pip.py). Save the file to Downloads.
 - Open command prompt and checkout the Downloads folder
 ```shell
@@ -38,6 +39,7 @@ This part assumes you are unfamiliar with git and [pip](https://pypi.org/project
 ```
 
 #### Minimal Setup
+_Done the Windows Platform part? Skip this_
 1. Access a clone copy of the repo
 ```shell
     git clone git@github.com:hogum/Linear_Systems_Reduction.git
@@ -61,10 +63,21 @@ Example No. | How to run | Block Activity
 --- | --- | ---
 Example 1 | python run.py example1 | Series
 Example 2 | python run.py example2 | Parallel
-Example 2 | python run.py example3 | Unity Feedback
+Example 3 | python run.py example3 | Unity Feedback
 Example 4 | python run.py example4 | Non-Unity Feedback
 Example 5 | python run.py example5 | Zeros and Poles
 
 
 ### Sample Result
+Feedback example ouput
+
 ![alt text](https://github.com/hogum/Linear_Systems_Reduction/blob/master/linearSystems/examples/data/tf.jpeg)
+
+2. Exercises
+
+Exercise No. | How to run
+--- | --- | ---
+Exercise 1 | python run.py exercise1 
+Exercise 2 | python run.py exercise2
+Exercise 3 | python run.py exercise3
+Exercise 4 | python run.py exercise4 
