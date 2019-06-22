@@ -1,4 +1,5 @@
-from linearSystems.examples import example1, example_2, example_3, example_4
+from linearSystems.examples import (
+    example1, example_2, example_3, example_4, example5)
 
 import sys
 
@@ -11,7 +12,8 @@ def run_model():
         'example2': example_2,
         'example1': example1,
         'example3': example_3,
-        'example4': example_4
+        'example4': example_4,
+        'example5': example5
     }
     opts = f'Options: {list(cmds.keys())}'
 
