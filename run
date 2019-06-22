@@ -1,4 +1,6 @@
-from linearSystems.examples import feedback, serify, parallelize
+#!/usr/bin/env python3
+
+from linearSystems.examples import example1, example_2, example_3, example_4
 
 import sys
 
@@ -8,9 +10,10 @@ def run_model():
         Runs the function soecifed as argument vector
     """
     cmds = {
-        'parallelize': parallelize,
-        'serify': serify,
-        'feedback': feedback
+        'example2': example_2,
+        'example1': example1,
+        'example3': example_3,
+        'example4': example_4
     }
     opts = f'Options: {list(cmds.keys())}'
 

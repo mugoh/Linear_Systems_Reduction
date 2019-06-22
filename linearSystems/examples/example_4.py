@@ -1,6 +1,7 @@
 """
-    Feedback System (Unity)
+    FeedBack [Non-Unity]
 """
+
 from .example1 import serify
 
 from ..utils.display import td
@@ -8,7 +9,7 @@ from ..utils.display import td
 import control as ct
 
 
-def unity_feedback():
+def non_unity_feedback():
     """
         Gets the transfer function from a feedback system
     """
@@ -16,8 +17,6 @@ def unity_feedback():
     sys_g, sysh = serify(called=True)
 
     sys_feedback_tf = ct.feedback(sys_g, sysh, sign=-1)
-    denom = '500s^3 + 100s^2 + s + 1'
-    sys_feedback_tf = '\n' + ' s + 1' + '\n' + '-' * len(denom) + '\n' + denom
 
-    td.ouput('Unity Feedback Series TF', keys=['G(c)', 'G(s)', 'sys tf'],
+    td.ouput('Non Unity Feedback Series TF', keys=['G(c)', 'G(s)', 'sys tf'],
              values=[sysh, sys_g, sys_feedback_tf])
