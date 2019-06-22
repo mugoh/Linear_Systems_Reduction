@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from linearSystems.examples import example1, example_2, example_3, example_4
 
 import sys
