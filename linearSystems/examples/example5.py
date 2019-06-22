@@ -1,7 +1,7 @@
 """
     Zeros and Poles
 """
-from ..utils.display import td
+from terminaltables import AsciiTable
 
 import numpy as np
 import control as ct
@@ -21,18 +21,24 @@ def locate_poles():
     numerator_g, denominator_g = np.array([6, 0, 1]), np.array([1, 3, 3, 1])
     sys_g = ct.tf(numerator_g, denominator_g)
 
-    zeros_g = ct.zeros(sys_g)
+    zeros_g = ct.zero(sys_g)
     pole_g = ct.pole(sys_g)
 
     numerator_h = np.convolve(n1, n2)
     denominator_h = np.convolve(d1, np.convolve(d2, d3))
-    sys_h = ct.tf(numerator_h / denominator_h)
+    sys_h = ct.tf(numerator_h, denominator_h)
 
     sys_tf = sys_g / sys_h
 
     pzmap_sys = ct.pzmap(sys_tf)
 
-    td.ouput(title='Poles and Zeros',
-             keys=['G(s)', 'Zeros(g)', 'Pole(g)', 'H(s)', 'T(s)', 'Pzmap(s)'],
-             values=[sys_g, zeros_g, pole_g, sys_h, sys_tf, pzmap_sys]
-             )
+    print(AsciiTable([['Poles and Zeros']]).table)
+    data = [['Function', 'Result Ouput'],
+            ['G(s)', sys_g],
+            ['Zeros(g)', zeros_g],
+            ['Pole(g)', pole_g],
+            ['H(s)', sys_h],
+            ['T(s)', sys_tf],
+            ['Pzmap(s)', pzmap_sys]
+            ]
+    print(AsciiTable(data).table)
