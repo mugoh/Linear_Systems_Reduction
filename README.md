@@ -1,4 +1,4 @@
-## Linear_Systems_Reduction
+## Linear_Systems_Reduction  [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 A gentle intro to reduction of linear systems block diagrams using series, parallel and feedback configuration
 
 ##### Why Python?
@@ -55,7 +55,7 @@ _Done the Windows Platform part? Skip this_
 
 ## Usage
 The LAB has five examples and exercises
-1. Running the examples
+1. Running the [examples](https://github.com/hogum/Linear_Systems_Reduction/tree/master/linearSystems/examples)
 - To run an example, pass the name of that example as an argument as shown below
 
 
@@ -73,11 +73,14 @@ Feedback example ouput
 
 ![alt text](https://github.com/hogum/Linear_Systems_Reduction/blob/master/linearSystems/examples/data/tf.jpeg)
 
-2. Exercises
+2. Running Exercises
 
-Exercise No. | How to run
---- | --- | ---
+
+Exercise No. | How to run 
+--- | ---
 Exercise 1 | python run.py exercise1 
 Exercise 2 | python run.py exercise2
 Exercise 3 | python run.py exercise3
 Exercise 4 | python run.py exercise4 
+
+If you've found this repo helpful, go ahead and [give it a star](https://github.com/hogum/Linear_Systems_Reduction/stargazers) :smile:
