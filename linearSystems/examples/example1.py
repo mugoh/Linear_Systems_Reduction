@@ -10,7 +10,7 @@ import control as ct
 import numpy as np
 
 
-def serify():
+def serify(called=False):
     """
         Generates a system of transfer functions for
         a series block combination
@@ -28,6 +28,9 @@ def serify():
     sys_g = ct.tf(numerator_g, denominator_g)
     sys_h = ct.tf(numerator_h, denominator_h)
     sys_tranfer_func = ct.series(sys_g, sys_h)
+
+    if called:
+        return sys_g, sys_h
 
     td.ouput('Series TF', keys=['G(s)', 'G(c)', 'sys tf'],
              values=[sys_g, sys_h, sys_tranfer_func])

@@ -1,5 +1,4 @@
-from linearSystems.examples.example1 import serify
-from linearSystems.examples.example_2 import parallelize
+from linearSystems.examples import feedback, serify, parallelize
 
 import sys
 
@@ -8,8 +7,12 @@ def run_model():
     """
         Runs the function soecifed as argument vector
     """
-    cmds = {'parallelize': parallelize, 'serify': serify}
-    opts = 'Options: parallelize, serify'
+    cmds = {
+        'parallelize': parallelize,
+        'serify': serify,
+        'feedback': feedback
+    }
+    opts = f'Options: {list(cmds.keys())}'
 
     try:
         input_arg = sys.argv[1]
