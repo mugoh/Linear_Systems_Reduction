@@ -52,7 +52,7 @@ This part assumes you are unfamiliar with git and [pip](https://pypi.org/project
 ```
 
 ## Usage
-The LAB has four examples and exercises
+The LAB has five examples and exercises
 1. Running the examples
 - To run an example, pass the name of that example as an argument as shown below
 
@@ -63,6 +63,7 @@ Example 1 | python run.py example1 | Series
 Example 2 | python run.py example2 | Parallel
 Example 2 | python run.py example3 | Unity Feedback
 Example 4 | python run.py example4 | Non-Unity Feedback
+Example 5 | python run.py example5 | Zeros and Poles
 
 
 ### Sample Result
