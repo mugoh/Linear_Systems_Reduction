@@ -89,4 +89,3 @@ Exercise 2 | python run.py exercise2
 Exercise 3 | python run.py exercise3
 Exercise 4 | python run.py exercise4 
 
-If you've found this repo helpful, go ahead and [give it a star](https://github.com/hogum/Linear_Systems_Reduction/stargazers) :smile:
