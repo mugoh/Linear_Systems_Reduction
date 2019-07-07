@@ -18,22 +18,25 @@ This part assumes you are unfamiliar with git and [pip](https://pypi.org/project
 
 #### Dependencies
 1. You will need python3 installed. [Click here to install python3](https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe)
-
-2. Install the package manager
-- Download get-pip from [here](https://bootstrap.pypa.io/get-pip.py). Save the file to Downloads.
-- Open command prompt and checkout the Downloads folder
+- Ensure to check the box **`Add python to path`** on the first installation window.
+- Open a command prompt window and checkout the Downloads folder using the command below
 ```shell
     cd Downloads
 ```
+2. Install the package manager
+  
+  [ Deprecated ] Skip this step(By default installing python installs `pip` for you).
+- Download get-pip from [here](https://bootstrap.pypa.io/get-pip.py). Save the file to Downloads.
+
 - Install pip (Ensure to have installed python first)
 ```shell
     python get-pip.py
 ```
-- Navigate to the cloned repo
+3. Navigate to the cloned repo
 ```shell
     cd Linear_Systems_Reduction
 ```
- - Install the project dependencies
+4. Install the project dependencies
 ```shell
     pip install -r requirements.txt
 ```
