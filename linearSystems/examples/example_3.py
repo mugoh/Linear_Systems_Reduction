@@ -19,5 +19,6 @@ def unity_feedback():
     denom = '500s^3 + 100s^2 + s + 1'
     sys_feedback_tf = '\n' + ' s + 1' + '\n' + '-' * len(denom) + '\n' + denom
 
-    td.ouput('Unity Feedback Series TF', keys=['G(c)', 'G(s)', 'sys tf'],
+    td.ouput('Unity Feedback Series TF \t Done on Mugoh\'s lenovo',
+             keys=['G(c)', 'G(s)', 'sys tf'],
              values=[sysh, sys_g, sys_feedback_tf])
